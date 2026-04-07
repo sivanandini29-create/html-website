@@ -1,4 +1,4 @@
-{
+*{
     margin: 0;
     padding: 0;
 
@@ -25,8 +25,8 @@
 }
 
 .logo{
-    color: #2f00ff;
-    font-size: 35px;
+    color: #ff7200;
+    font-size: 40px;
     font-family: Arial;
     padding-left: 20px;
     float: left;
@@ -41,7 +41,7 @@
 
 ul{
     float: left;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -58,33 +58,38 @@ ul li a{
     color: #fff;
     font-family: Arial;
     font-weight: bold;
-    transition: 0.4s ease-out;
+    transition: .4s ease;
 }
 
 ul li a:hover{
-    color:#ff6a00d1;
+    color: #ff6a00d1;
 }
 
 .search{
-    width: 330px;
+    width: 16px;
     float: left;
-    margin-left: 270px;
+    margin-left: 350px;
+    padding-top: 30px;
 }
 
 .srch{
     font-family: 'Times New Roman';
-    width: 200px;
+    width: 240px;
     height: 40px;
     background: transparent;
-    border: 1px solid #ff7200;
-    margin-top: 13px;
+    border-bottom: 3px solid #ff7200;
+    border-top: 3px solid #ff7200;
+    margin-top: 10px;
     color: #fff;
-    border-right: none;
+    border-right: 3px solid #ff7200;
+    border-left: 3px solid #ff7200;
     font-size: 16px;
     float: left;
     padding: 15px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .btn{
@@ -92,42 +97,55 @@ ul li a:hover{
     height: 40px;
     background: #ff7200;
     border: 2px solid #ff7200;
-    margin-top: 13px;
+    margin-top: 6px;
     color: #fff;
-    font-size: 15px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    font-size: 20px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn2{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 6px;
+    color: #fff;
+    font-size: 20px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .btn:focus{
-    outline: none;
+    outline: 10px solid #ff7200;
 }
 
 .srch:focus{
-    outline: none;
+    outline: 10px solid #ff7200;
 }
 
 .content{
     width: 1200px;
     height: auto;
-    margin: 10px;
+    margin: 15px;
     color: #fff;
-    position: relative;
+    position: absolute;
 }
 
 .content .par{
     padding-left: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     font-family: Arial;
-    letter-spacing: 1.2px;
+    letter-spacing: 2px;
     line-height: 30px;
+    
 }
 
 .content h3{
     font-family: 'Times New Roman';
     font-size: 50px;
-    padding: 30px;
-    letter-spacing: 2px;
+    padding: 20px;
+    margin-top: 1%;
+    letter-spacing: px;
 }
 
 .content .cn{
@@ -136,9 +154,105 @@ ul li a:hover{
     background: #ff7200;
     border: none;
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
+    transition: .4s ease;
+
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 60px;
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: 150px;
+    right: -40px;
+    z-index: 10;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h4{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 10px;
+    margin-left: auto;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: 0.4s ease;
+}
+
+.btn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
 }
 
